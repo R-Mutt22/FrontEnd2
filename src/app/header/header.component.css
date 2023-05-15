@@ -1,0 +1,23 @@
+header{
+    background-color: rgb(164, 96, 227);
+    padding: -2%;
+}
+
+img.programa{
+    max-width: 15%;
+    max-height: 10%;
+}
+
+img.redes{
+    max-width: 3%;
+    max-height: 3%;
+    margin: 1%;
+}
+
+.container{
+    display: inline;
+}
+
+.container2{
+    margin-left: 65%;
+}

@@ -1,0 +1,49 @@
+.modal-container{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    min-height: 180vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(79,79,79,0.95);
+    z-index: 1;
+}
+
+.modal-content{
+    position: absolute;
+    margin-top: 10%;
+    width: 20%;
+    height: auto;
+    padding: 1em;
+    border-radius: 7%;
+    background-color: rgb(208, 208, 208);
+    text-align: center;
+    justify-content: space-between;
+
+}
+
+.modal-container img{
+    padding: -7px;
+    margin: -7px;
+    width: 10px;
+    height: 10px;
+    justify-content: space-between;
+}
+
+.cerrar{
+    width: 10px;
+    height: 7px;
+    text-align: right;
+    justify-content: space-between;
+}
+
+.inLine{
+    justify-content: space-between;
+}
+
+.login-error{
+    font-size: small;
+    color: rgb(255, 82, 82)
+}

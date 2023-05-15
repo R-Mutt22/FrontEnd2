@@ -1,0 +1,36 @@
+<div>
+    <table class="table">
+        <tbody>
+            
+            <tr *ngFor="let Formacion of forma">
+                <div *ngIf="Formacion">
+                <td><h5>{{Formacion.nombreF}}</h5></td>
+                <td>{{Formacion.descripcionF}}</td>
+            
+                <td><button class="btn btn-light" (click)="navigateToEdit(Formacion.id)">Editar</button></td>
+                <td><button class="btn btn-danger" (click)="borrar(Formacion.id)">Borrar</button></td>
+            </div>
+            </tr>
+       
+        </tbody>
+    </table>
+
+</div>
+
+
+<div class="container">
+    <div class="row">
+        <form (ngSubmit)="onCreate()" novalidate #f="ngForm">
+            <div class="form-group">
+                <label for="nombreF">Nombre de la Institucion</label>
+                <input type="text" class="form-control" id="nombreF" name="nombreF" [(ngModel)]="nombreF" required>
+            </div>
+            <div class="form-group">
+                <label for="descripcionF">Titulo</label>
+                <input type="text" class="form-control" id="descripcionF" name="descripcionF" [(ngModel)]="descripcionF" required>
+            </div>
+            <button class="btn btn-dark" (click)="onCreate()">Agregar formacion</button>
+        </form>
+    </div>
+</div>
+

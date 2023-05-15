@@ -1,0 +1,33 @@
+<div class="modal-container">
+    <div class="modal-content">
+        <div class="inLine">
+
+          
+    <h4>Bienvenido!</h4>
+
+    <p>user: admin, pass: matias87</p>
+        
+    
+        </div>
+    <br>
+    <div class="form-outline mb-4">
+      <input class="form-control form-control-lg" placeholder="Usuario" name="username" [(ngModel)]="username">
+    </div>
+
+    <div class="form-outline mb-4">
+      <input type="password" class="form-control form-control-lg" placeholder="Contraseña" name="password" [(ngModel)]="password">
+    </div>
+    <div *ngIf="logged == false">
+      <p class="login-error">Usuario o contraseña inválido</p>
+
+    </div>
+    <div>    <button type="button" class="btn btn-outline-secondary" (click)="userLogin()">Ingresar</button> </div>
+    <div>   <button type="button" class="btn btn-outline-secondary" (click)="cerrarModal()">Cerrar</button> </div>
+ 
+
+    
+
+
+    </div>
+</div>
+

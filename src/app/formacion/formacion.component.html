@@ -1,0 +1,13 @@
+<div>
+    <table class="table">
+        <tbody>
+            <tr *ngFor="let Formacion of forma">
+                <div *ngIf="Formacion">
+                <td><h5>{{Formacion.nombreF}}</h5></td>
+                <td>{{Formacion.descripcionF}}</td>
+            </div>
+            </tr>
+        </tbody>
+    </table>
+
+</div>
